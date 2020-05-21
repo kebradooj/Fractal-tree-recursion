@@ -36,5 +36,10 @@ namespace FractalTreeReacursion
         {
             drawFractal(panel1.Width / 2, 0, 280, 0, e);
         }
+
+        private void panel1_Resize(object sender, EventArgs e)
+        {
+            panel1.Invalidate();
+        }
     }
 }
